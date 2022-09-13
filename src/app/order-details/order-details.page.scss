@@ -1,0 +1,59 @@
+ion-header{
+    .tittle{
+      position: absolute;
+      width: 400px;
+      height: 77px;
+      left: 38%;
+      top: 20px;
+  
+      font-family: 'Impact';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 63px;
+      line-height: 77px;
+  
+      letter-spacing: 0.05em;
+      
+      color: #2e326d;
+    }
+
+    .btn-back{
+      position: absolute;
+      width: 400px;
+      height: 77px;
+      left: -500px;
+      top: 10px; 
+    }
+
+    .resim{
+        position: absolute;
+    }
+}
+
+ion-content{
+    --background: rgba(221, 231, 250, 0.863);
+
+    .segment-class{
+      position: absolute;
+      width: 1000px;
+      height: 80px;
+      left: 300px;
+      top: 100px;
+    }
+
+    .upcomingOrd{
+      position: absolute;
+      width: 1000px;
+      height: 80px;
+      left: 450px;
+      top: 200px;
+    }
+
+    .pastOrd{
+        position: absolute;
+        width: 1000px;
+        height: 80px;
+        left: 450px;
+        top: 200px;
+      }
+}

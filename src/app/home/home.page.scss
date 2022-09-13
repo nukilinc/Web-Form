@@ -1,0 +1,106 @@
+ion-header{
+  .tittle{
+    position: absolute;
+    width: 400px;
+    height: 77px;
+    left: 38%;
+    top: 20px;
+
+    font-family: 'Impact';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 63px;
+    line-height: 77px;
+
+    letter-spacing: 0.05em;
+    
+    color: #2e326d;
+  }
+
+  .resim{
+    position: absolute;
+    width: 500px;
+    height:300px;
+    left: 200px;
+    margin-top: 95px;
+  }
+
+  .resim2{
+    position: absolute;
+    width: 300px;
+    height:200px;
+    left: 900px;
+    margin-top: 350px;
+  }
+}
+
+ion-content{
+  --background: rgba(221, 231, 250, 0.863);
+
+  .input-select{
+    border-radius: 20px;
+    margin-bottom: 26px;
+    box-shadow: 100 100px 100px 0px rgba(57, 71, 82, 0.12);
+    font-weight: 500;
+    position: absolute;
+    right: 190px;
+    height: 50px;
+    width: 500px;
+    margin-top: 175px;  
+}
+
+ion-item{
+  border-radius: 20px;
+  box-shadow: 100 100px 100px 0px rgba(57, 71, 82, 0.12);
+  font-weight: 500;
+  position: absolute;
+  right: 190px;
+  height: 50px;
+  width: 500px;
+  margin-top: 250px;  
+}
+
+  .name-class{
+      background-color: #f6f8fb;
+      border-radius: 20px;
+      margin-bottom: 26px;
+      position: absolute;
+      width: 500px;
+      height: 50px;
+      left: 170px;
+      margin-top: 370px;
+  } 
+
+  .quantity-class{
+      background-color: #e9effa;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      position: absolute;
+      width: 500px;
+      height: 50px;
+      left: 170px;
+      margin-top: 440px;
+  }
+
+  .amount-class{
+      background-color: #dee7fd;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      position: absolute;
+      width: 500px;
+      height: 50px;
+      left: 170px;
+      margin-top: 510px;
+  }
+
+  .button-class{
+      background-color: #06084d;
+      border-radius: 100px;
+      margin-bottom: 100px;
+      position: absolute;
+      width: 200px;
+      height: 50px;
+      left: 650px;
+      margin-top: 610px;
+  }
+}

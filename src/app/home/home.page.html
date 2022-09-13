@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-label class="tittle">Sipariş Ekranı</ion-label>
+  <img class="resim" src="https://www.pngall.com/wp-content/uploads/2016/07/Online-Shopping-PNG-Pic.png"/>
+  <img class="resim2" src="https://www.pngall.com/wp-content/uploads/2016/07/Online-Shopping.png"/>
+</ion-header>
+
+<ion-content>
+    <ion-label class="input-label">
+      <select class="input-select" [(ngModel)]="product.firma">
+        <option>Alibaba</option>
+        <option>Zalando</option>
+        <option>B2W Companhia Digital</option>
+        <option>Rakuten</option>
+        <option>eBay</option>
+        <option>Jingdong</option>
+      </select>
+    </ion-label>
+
+    <ion-item button="true" id="open-date-input">
+      <ion-label>Order Date</ion-label>
+      <ion-input
+        value="{{ product.date| date: 'dd.MM.yyyy' }}"
+        id="date"
+        class="ion-text-end"
+    ></ion-input>
+      <ion-popover trigger="date" size="cover" [dismissOnSelect]="true">
+        <ng-template>
+          <ion-datetime  [(ngModel)] = "product.date" presentation="date"></ion-datetime>
+        </ng-template>
+      </ion-popover>  
+    </ion-item>
+    
+    <ion-label>
+      <input class="name-class"
+             type="text"
+             name="name"
+             placeholder="Ürün Adı"
+             [(ngModel)]="product.name">
+    </ion-label>
+
+    <ion-label>
+      <input class="quantity-class"
+             type="text"
+             name="quantity"
+             placeholder="Adet"
+             [(ngModel)]="product.quantity">
+    </ion-label>
+  
+    <ion-label>
+      <input class="amount-class"
+             type="text"
+             name="amount"
+             placeholder="Amount"
+             [(ngModel)]="product.amount">
+    </ion-label>
+
+    <ion-button color="#c2617c" class="button-class" (click)="addProduct()" href="/order-details">Submit</ion-button>
+  
+</ion-content>

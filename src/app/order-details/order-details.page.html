@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-label class="tittle">Order Details
+      <ion-buttons class="btn-back" slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-label>  
+</ion-header>
+
+<ion-content>
+  <ion-segment class="segment-class" value="upcoming" (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="upcoming">
+      <ion-label>UpComing</ion-label>
+    </ion-segment-button>
+  
+    <ion-segment-button value="past">
+      <ion-label>Past</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div class="upcomingOrd" *ngIf="upcoming">
+    <div *ngFor="let order of orders">
+      <li><p id="date">{{order.date | date: 'dd.MM.yyyy'}}</p>
+        <p id="title">{{(order.name)}}</p></li>
+    </div>
+  </div>
+
+  <div class="pastOrd" *ngIf="past">
+    <div *ngFor="let order of pastOrder">
+     <p id="date">{{order.date | date: 'dd.MM.yyyy'}}</p>
+     <p id="title">{{(order.name)}}</p>
+    </div>
+  </div>
+</ion-content>
