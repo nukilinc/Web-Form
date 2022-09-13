@@ -10,3 +10,4 @@ Ekle butonuna basıldığında sipariş bilgileri local storageye eklenir.
 
 Sipariş geçmişi ekranında tarihe göre geçmiş ve gelecek sipariş kayıtları listelenmektedir.
 Kayıtlar local storageden alıarak tarihe göre listelenir.
+bu ekranda back butonu bulunmakta ve bu sayede istenilirse sipariş ekranına geri dönüş yapılabilmektedir.
